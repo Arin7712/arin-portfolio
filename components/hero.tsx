@@ -9,7 +9,10 @@ import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { Inter } from "next/font/google";
 
-const font = Inter({weight: ['400', '500', '600', '700'], subsets: ['latin']})
+const font = Inter({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const containerVariants = {
   hidden: {},
@@ -52,26 +55,26 @@ const Hero = () => {
           animate="visible"
           className="bg-neutral-100 border-[1px] border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40"
         >
-          <p className={font.className}>✨ Start your project this week</p>
+          <p className={font.className}>✨ Trusted by Growing Businesses</p>
         </motion.div>
         <motion.h1
           className="md:text-5xl text-4xl tracking-tight font-medium"
           variants={fadeInUp}
         >
-          Conversion-focused websites that help startups launch & scale fast.
+          Websites That Drive More Leads, Sales, and Growth.{" "}
         </motion.h1>
 
         <motion.p
-          className="text-md text-neutral-500 max-w-lg"
+          className="text-lg leading-tight text-neutral-500 max-w-lg"
           variants={fadeInUp}
         >
-          Helping startups drive more leads and sales in 7 days with conversion
-          focused websites.
+          Helping startups and businesses 10x their leads and sales in 7 days
+          with conversion-focused websites.
         </motion.p>
 
         <motion.div className="flex items-center gap-6" variants={fadeInUp}>
           <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20">
-            Schedule call
+            Book a Free Strategy Call
             <MoveRight />
           </Button>
           <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
@@ -84,10 +87,10 @@ const Hero = () => {
           variants={containerVariants}
         >
           <motion.p
-            className="text-xs text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
+            className="text-sm text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
             variants={fadeInUp}
           >
-            Our recent clients:
+            Client's who've trusted us:
           </motion.p>
 
           <motion.div

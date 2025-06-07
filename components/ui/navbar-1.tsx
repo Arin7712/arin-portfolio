@@ -91,7 +91,7 @@ const Navbar1 = () => {
 
         {/* Mobile Menu Button */}
         <motion.button className="md:hidden flex items-center" onClick={toggleMenu} whileTap={{ scale: 0.9 }}>
-          <Menu className="h-6 w-6 text-neutral-200" />
+          {isOpen ? <X className="h-6 w-6 text-neutral-200" /> : <Menu className="h-6 w-6 text-neutral-200" />}
         </motion.button>
       </div>
 
@@ -105,16 +105,6 @@ const Navbar1 = () => {
             exit={{ opacity: 0, y: "0%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
-            <motion.button
-              className="absolute top-6 right-6 p-2"
-              onClick={toggleMenu}
-              whileTap={{ scale: 0.9 }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <X className="h-6 w-6 text-neutral-200" />
-            </motion.button>
             <div className="flex flex-col space-y-6">
               {navItems.map((item, i) => (
                 <motion.div

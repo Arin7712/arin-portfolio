@@ -49,7 +49,7 @@ const Hero = () => {
           animate="visible"
           className="bg-neutral-100 border-[1px] border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40"
         >
-          <p>✨ June onboarding start now</p>
+          <p>✨ Start your project this week</p>
         </motion.div>
         <motion.h1
           className="md:text-5xl text-4xl tracking-tight font-medium"

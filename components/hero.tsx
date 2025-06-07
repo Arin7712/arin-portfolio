@@ -7,6 +7,9 @@ import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
+import { Inter } from "next/font/google";
+
+const font = Inter({weight: ['400', '500', '600', '700']})
 
 const containerVariants = {
   hidden: {},
@@ -49,7 +52,7 @@ const Hero = () => {
           animate="visible"
           className="bg-neutral-100 border-[1px] border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40"
         >
-          <p>✨ Start your project this week</p>
+          <p className={font.className}>✨ Start your project this week</p>
         </motion.div>
         <motion.h1
           className="md:text-5xl text-4xl tracking-tight font-medium"

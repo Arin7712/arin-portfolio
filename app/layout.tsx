@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar1 } from "@/components/ui/navbar-1";
 
-const font = Inter({subsets: ['latin']})
+const font = Manrope({weight: ['400', '500', '600', '700']})  
 
 export const metadata: Metadata = {
   title: "Scale Site",

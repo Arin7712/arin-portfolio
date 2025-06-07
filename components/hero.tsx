@@ -24,7 +24,7 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="h-screen relative md:pt-0 pt-[12rem] bg-stone-100 flex flex-col md:justify-center items-center md:px-[6rem] px-6 text-neutral-800">
+    <div className="h-screen relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-6 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -44,6 +44,13 @@ const Hero = () => {
         initial="hidden"
         animate="show"
       >
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          className="bg-neutral-100 border-[1px] border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40"
+        >
+          <p>✨ June onboarding start now</p>
+        </motion.div>
         <motion.h1
           className="md:text-5xl text-4xl tracking-tight font-medium"
           variants={fadeInUp}
@@ -81,13 +88,10 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex items-center gap-6 md:gap-10 justify-center max-w-xs md:max-w-md"
+            className="flex items-center gap-6 md:gap-10 justify-center max-w-xs md:max-w-lg"
             variants={containerVariants}
           >
-            <InfiniteSlider
-              gap={32}
-              reverse
-            >
+            <InfiniteSlider gap={40} reverse>
               <Image
                 src="/logo1.png"
                 alt="Image 1"
@@ -95,14 +99,21 @@ const Hero = () => {
                 height={100}
                 className="invert"
               />
-                            <Image
+              <Image
                 src="/logo2.webp"
                 alt="Image 1"
                 width={100}
                 height={100}
                 className="invert"
               />
-              <Image src="/logo4.webp" alt="Image 4" width={100} height={100} className="grayscale invert"/>
+              <Image
+                src="/logo4.webp"
+                alt="Image 4"
+                width={100}
+                height={100}
+                className="grayscale invert"
+              />
+              <h1 className="text-xl font-semibold">SaasBoomi</h1>
             </InfiniteSlider>
           </motion.div>
         </motion.div>

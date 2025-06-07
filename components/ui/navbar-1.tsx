@@ -63,9 +63,9 @@ const Navbar1 = () => {
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.01 }}
               >
-                <a href="#" className="text-sm text-neutral-200 hover:text-gray-600 transition-colors font-medium">
+                <a href="#" className="text-sm text-neutral-200 hover:text-white transition-colors font-medium">
                   {item.name}
                 </a>
               </motion.div>
@@ -99,10 +99,10 @@ const Navbar1 = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white z-50 pt-24 px-6 md:hidden"
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
+            className="fixed inset-0 bg-neutral-800 border-neutral-300 border-[1px] rounded-2xl z-50 mt-20 mx-6 py-6 px-6 md:hidden h-fit"
+            initial={{ opacity: 0, y: "0%" }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: "0%" }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
             <motion.button
@@ -113,7 +113,7 @@ const Navbar1 = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <X className="h-6 w-6 text-gray-900" />
+              <X className="h-6 w-6 text-neutral-200" />
             </motion.button>
             <div className="flex flex-col space-y-6">
               {navItems.map((item, i) => (
@@ -124,7 +124,7 @@ const Navbar1 = () => {
                   transition={{ delay: i * 0.1 + 0.1 }}
                   exit={{ opacity: 0, x: 20 }}
                 >
-                  <a href="#" className="text-base text-gray-900 font-medium" onClick={toggleMenu}>
+                  <a href="#" className="text-base text-neutral-200 font-medium" onClick={toggleMenu}>
                     {item.name}
                   </a>
                 </motion.div>
@@ -139,7 +139,7 @@ const Navbar1 = () => {
               >
                 <a
                   href="#"
-                  className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-white bg-black rounded-full hover:bg-gray-800 transition-colors "
+                  className="inline-flex items-center justify-center w-full px-5 py-3 text-base text-neutral-800 bg-neutral-200 rounded-full hover:bg-gray-800 transition-colors "
                   onClick={toggleMenu}
                 >
                   Get Started

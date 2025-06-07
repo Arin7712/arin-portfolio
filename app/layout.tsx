@@ -3,7 +3,7 @@ import { Inter, Manrope, Poppins } from "next/font/google";
 import "./globals.css";
 import { Navbar1 } from "@/components/ui/navbar-1";
 
-const font = Manrope({weight: ['400', '500', '600', '700']})  
+const font = Manrope({weight: ['400', '500', '600', '700'], subsets: ['latin']})  
 
 export const metadata: Metadata = {
   title: "Scale Site",

@@ -58,6 +58,7 @@ const Portfolio = () => {
                 alt="Project 1"
                 width={1200}
                 height={1200}
+                className="rounded-md"
               />
             </div>
             <div className="md:w-[50%] md:px-0 px-4 pr-0 py-4 md:pr-10 flex flex-col justify-between items-start text-start">

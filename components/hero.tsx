@@ -30,7 +30,7 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="h-screen relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-6 text-neutral-800">
+    <div className="h-screen relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -65,7 +65,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg leading-tight text-neutral-500 max-w-lg"
+          className="md:text-lg text-sm leading-tight text-neutral-500 max-w-lg"
           variants={fadeInUp}
         >
           Helping startups and businesses 10x their leads and sales in 7 days

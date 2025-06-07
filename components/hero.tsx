@@ -70,7 +70,7 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center gap-2 md:max-w-sm absolute bottom-[5%]"
+          className="flex flex-col items-center gap-2 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"
           variants={containerVariants}
         >
           <motion.p
@@ -81,7 +81,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex items-center gap-6 md:gap-10 justify-center max-w-sm md:max-w-md"
+            className="flex items-center gap-6 md:gap-10 justify-center max-w-xs md:max-w-md"
             variants={containerVariants}
           >
             <InfiniteSlider

@@ -1,42 +1,56 @@
+"use client";
+
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
-const font = Inter({ weight: ["400", "500", "600", "700"] , subsets: ['latin']});
+const font = Inter({ weight: ["400", "500", "600", "700"], subsets: ["latin"] });
 
 const portfolio = [
   {
     image: "/project1.png",
     title: "Saas",
     name: "SaasBoomi",
-    description:
-      "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
     link: "https://saasboomi.vercel.app/",
   },
   {
     image: "/project2.png",
     title: "Sales",
     name: "Scooter AI",
-    description:
-      "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
     link: "https://saasboomi.vercel.app/",
   },
   {
     image: "/project3.png",
     title: "Sales",
     name: "Quantumflux",
-    description:
-      "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    link: "https://saasboomi.vercel.app/",
+  },
+  {
+    image: "/project3.png",
+    title: "Sales",
+    name: "Quantumflux",
+    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
     link: "https://saasboomi.vercel.app/",
   },
 ];
 
 const Portfolio = () => {
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  const handleLoadMore = () => {
+    setVisibleCount(portfolio.length); // Show all on click
+  };
+
+  const visiblePortfolios = portfolio.slice(0, visibleCount);
+
   return (
-    <div className="flex flex-col items-center text-center py-[6rem] md:px-0 px-6 bg-neutral-100 text-neutral-800">
+    <div className="flex flex-col items-center text-center py-[6rem] md:px-0 px-6 bg-neutral-50 text-neutral-800">
       <div className="flex flex-col gap-4 max-w-xl items-center">
         <div className="bg-neutral-100 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
           <p className={font.className}>✨ Portfolio</p>
@@ -47,15 +61,15 @@ const Portfolio = () => {
       </div>
 
       <div className="md:pt-[6rem] pt-[4rem] space-y-8 max-w-7xl">
-        {portfolio.map((item, index) => (
+        {visiblePortfolios.map((item, index) => (
           <div
             key={index}
-            className="w-full shadow-xl p-2 gap-6 bg-white rounded-4xl flex md:flex-row flex-col justify-between"
+            className="w-full shadow-lg md:shadow-xl p-2 gap-6 bg-white rounded-4xl flex md:flex-row flex-col justify-between"
           >
             <div className="md:w-[50%] bg-neutral-100 px-6 md:px-[2rem] py-8 md:py-[6rem] rounded-4xl">
               <Image
                 src={item.image}
-                alt="Project 1"
+                alt={item.name}
                 width={1200}
                 height={1200}
                 className="rounded-md"
@@ -83,6 +97,14 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+
+      {visibleCount < portfolio.length && (
+        <div className="md:pt-[6rem] pt-6">
+          <Button className="px-6 rounded-full py-2" onClick={handleLoadMore}>
+            Load more
+          </Button>
+        </div>
+      )}
     </div>
   );
 };

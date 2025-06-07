@@ -65,7 +65,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg leading-tight text-neutral-500 max-w-lg"
+          className="md:text-lg text-sm leading-tight text-neutral-500 max-w-lg"
           variants={fadeInUp}
         >
           Helping startups and businesses 10x their leads and sales in 7 days

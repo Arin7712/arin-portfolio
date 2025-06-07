@@ -23,7 +23,7 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="h-screen md:pt-0 pt-[10rem] relative bg-stone-100 flex flex-col md:justify-center items-center md:px-[6rem] px-6 text-neutral-800">
+    <div className="md:h-screen h-[90vh] relative bg-stone-100 flex flex-col justify-center items-center md:px-[6rem] px-6 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -53,7 +53,7 @@ const Hero = () => {
         </motion.p>
 
         <motion.div className="flex items-center gap-6" variants={fadeInUp}>
-          <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800">
+          <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20">
             Schedule call
             <MoveRight />
           </Button>
@@ -74,7 +74,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex md:flex-nowrap flex-wrap items-center gap-10 justify-center"
+            className="flex md:flex-nowrap flex-wrap items-center gap-6 md:gap-10 justify-center"
             variants={containerVariants}
           >
             <motion.div variants={fadeInUp}>

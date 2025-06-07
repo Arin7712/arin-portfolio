@@ -23,7 +23,7 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="h-screen relative bg-stone-100 flex flex-col justify-center items-center md:px-[6rem] px-6 text-neutral-800">
+    <div className="md:h-screen md:pt-0 pt-[10rem] relative bg-stone-100 flex flex-col justify-center items-center md:px-[6rem] px-6 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}

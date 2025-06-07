@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 
-const font = Inter({ weight: ["400", "500", "600", "700"] });
+const font = Inter({ weight: ["400", "500", "600", "700"] , subsets: ['latin']});
 
 const portfolio = [
   {

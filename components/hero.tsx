@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { Inter } from "next/font/google";
 
-const font = Inter({weight: ['400', '500', '600', '700']})
+const font = Inter({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 const containerVariants = {
   hidden: {},

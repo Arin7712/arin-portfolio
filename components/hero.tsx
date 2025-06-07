@@ -81,7 +81,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex md:flex-nowrap flex-wrap items-center gap-6 md:gap-10 justify-center max-w-md"
+            className="flex md:flex-nowrap flex-wrap items-center gap-6 md:gap-10 justify-center md:max-w-md"
             variants={containerVariants}
           >
             <InfiniteSlider

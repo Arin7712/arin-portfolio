@@ -6,6 +6,7 @@ import Image from "next/image";
 import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { InfiniteSlider } from "./ui/infinite-slider";
 
 const containerVariants = {
   hidden: {},
@@ -43,11 +44,17 @@ const Hero = () => {
         initial="hidden"
         animate="show"
       >
-        <motion.h1 className="md:text-5xl text-4xl tracking-tight font-medium" variants={fadeInUp}>
+        <motion.h1
+          className="md:text-5xl text-4xl tracking-tight font-medium"
+          variants={fadeInUp}
+        >
           Conversion-focused websites that help startups launch & scale fast.
         </motion.h1>
 
-        <motion.p className="text-md text-neutral-500 max-w-lg" variants={fadeInUp}>
+        <motion.p
+          className="text-md text-neutral-500 max-w-lg"
+          variants={fadeInUp}
+        >
           Helping startups drive more leads and sales in 7 days with conversion
           focused websites.
         </motion.p>
@@ -74,18 +81,29 @@ const Hero = () => {
           </motion.p>
 
           <motion.div
-            className="flex md:flex-nowrap flex-wrap items-center gap-6 md:gap-10 justify-center"
+            className="flex md:flex-nowrap flex-wrap items-center gap-6 md:gap-10 justify-center max-w-md"
             variants={containerVariants}
           >
-            <motion.div variants={fadeInUp}>
-              <Image src="/logo2.webp" width={120} height={120} alt="logo" className="invert" />
-            </motion.div>
-            <motion.div variants={fadeInUp}>
-              <Image src="/logo1.png" width={120} height={120} alt="logo" className="invert" />
-            </motion.div>
-            <motion.div variants={fadeInUp}>
-              <Image src="/logo4.webp" width={120} height={120} alt="logo" className="grayscale invert" />
-            </motion.div>
+            <InfiniteSlider
+              gap={32}
+              reverse
+            >
+              <Image
+                src="/logo1.png"
+                alt="Image 1"
+                width={100}
+                height={100}
+                className="invert"
+              />
+                            <Image
+                src="/logo2.webp"
+                alt="Image 1"
+                width={100}
+                height={100}
+                className="invert"
+              />
+              <Image src="/logo4.webp" alt="Image 4" width={100} height={100} className="grayscale invert"/>
+            </InfiniteSlider>
           </motion.div>
         </motion.div>
       </motion.div>

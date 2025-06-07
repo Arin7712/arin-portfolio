@@ -45,7 +45,7 @@ const Hero = () => {
       />
 
       <motion.div
-        className="flex flex-col text-center items-center justify-center gap-6 md:max-w-3xl"
+        className="flex flex-col text-center items-center justify-center gap-6 max-w-full md:max-w-3xl"
         variants={containerVariants}
         initial="hidden"
         animate="show"
@@ -72,7 +72,7 @@ const Hero = () => {
           with conversion-focused websites.
         </motion.p>
 
-        <motion.div className="flex items-center gap-6" variants={fadeInUp}>
+        <motion.div className="flex md:flex-row flex-col items-center gap-6" variants={fadeInUp}>
           <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20">
             Book a Free Strategy Call
             <MoveRight />

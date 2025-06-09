@@ -39,7 +39,7 @@ const page = () => {
         <div
           className="space-y-3 flex flex-col items-center justify-center"
         >
-          <h1 className="text-4xl tracking-tighter font-semibold md:max-w-xl">
+          <h1 className="md:text-4xl text-3xl tracking-tighter font-semibold md:max-w-xl">
             Let’s Build a Website That Actually Converts
           </h1>
           <p className="text-sm max-w-md text-neutral-300">

@@ -1,5 +1,12 @@
 "use client";
-import { CalendarCheck, FileUser, LaptopMinimalCheck, MailCheck, TvMinimalPlay } from "lucide-react";
+import {
+  CalendarCheck,
+  FileUser,
+  LaptopMinimalCheck,
+  MailCheck,
+  PhoneCall,
+  TvMinimalPlay,
+} from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
@@ -19,7 +26,7 @@ const Ripple = () => {
       {ripples.map((id: any) => (
         <motion.div
           key={id}
-          className="absolute w-20 h-20 rounded-full bg-gradient-to-br from-green-300/30 via-green-400/20 to-green-500/10 border border-green-300/20"
+          className="absolute w-20 h-20 rounded-full bg-gradient-to-br from-orange-300/30 via-orange-400/20 to-orange-500/10 border border-orange-300/20"
           initial={{ scale: 0, opacity: 1 }}
           animate={{ scale: 2.5, opacity: 0 }}
           transition={{
@@ -43,9 +50,9 @@ const Steps = () => {
 
       {/* Heading Section */}
       <div className="flex flex-col gap-3 max-w-2xl items-center text-center pt-4">
-        <h1 className="text-5xl font-medium tracking-tighter">My Process</h1>
+        <h1 className="text-5xl font-medium tracking-tighter">How It Works</h1>
         <p className="md:text-md text-sm text-neutral-400">
-          A clear, streamlined process to deliver your website fast — without compromising quality & ensuring professionalism.
+          Here’s How We Go From Idea to Live in Just 7 Days
         </p>
       </div>
 
@@ -61,53 +68,52 @@ const Steps = () => {
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
           <div className="relative w-16 h-16 flex items-center justify-center">
             <Ripple />
-            <MailCheck className="text-green-400 z-10 w-6 h-6" />
+            <MailCheck className="text-orange-400 z-10 w-6 h-6" />
           </div>
         </div>
 
         {/* Step Cards */}
-        <div className="absolute w-[50%] top-[22%] md:top-[25%] left-[22%] md:left-[25%] -translate-x-1/2 -translate-y-1/2 px-4 py-2 text-sm flex flex-col md:text-center md:items-center gap-1">
-          <CalendarCheck className="bg-neutral-800 rounded-md p-2 size-10 md:size-12 mb-4" />
-          <h1 className="md:text-2xl text-md tracking-tight leading-tight">
-            Tell us who you are hiring
+        <div className="absolute w-[50%] top-[22%] md:top-[25%] left-[22%] md:left-[25%] -translate-x-1/2 -translate-y-1/2 px-4 py-2 text-sm flex flex-col  gap-1">
+          <PhoneCall className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
+          <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
+            1. Discovery Call
           </h1>
           <p className="md:text-sm text-xs text-neutral-400 max-w-xs">
             {" "}
-            Share your goals, role requirements, and must-haves.
+            We understand your goals & target audience.
           </p>
         </div>
-        <div className="absolute w-[50%] top-[22%] md:top-[25%] right-[25%] translate-x-1/2 -translate-y-1/2  px-4 py-2  text-sm flex flex-col md:text-center md:items-center gap-1">
-          <TvMinimalPlay className="bg-neutral-800 rounded-md p-2 size-10 md:size-12 mb-4" />
-          <h1 className="md:text-2xl text-md tracking-tight leading-tight">
-            We screen for you
+        <div className="absolute w-[50%] top-[22%] md:top-[25%] right-[25%] md:right-[20%] translate-x-1/2 -translate-y-1/2  px-4 py-2  text-sm flex flex-col  gap-1">
+          <TvMinimalPlay className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500 " />
+          <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
+            2. Copy & Strategy
           </h1>
           <p className="md:text-sm text-xs text-neutral-400 max-w-xs">
             {" "}
-            Candidates complete async video prompts and behavior-based assessments
+            We write high-converting copy and structure your website for maximum
+            clarity and flow.
           </p>{" "}
         </div>
-        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] left-[22%] md:left-[25%] -translate-x-1/2 translate-y-1/2  px-4 py-2 text-sm flex flex-col md:text-center md:items-center gap-1">
-          <FileUser className="bg-neutral-800 rounded-md p-2 size-10 md:size-12 mb-4" />
-          <h1 className="md:text-2xl text-md tracking-tight leading-tight">
-            You get a ranked shortlist
+        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] left-[22%] md:left-[25%] -translate-x-1/2 translate-y-1/2  px-4 py-2 text-sm flex flex-col  gap-1">
+          <FileUser className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
+          <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
+            3. Design & Build
           </h1>
           <p className="md:text-sm text-xs text-neutral-400 max-w-xs">
             {" "}
-            Each profile includes structured scorecards, behavioral traits, and voice/video responses.
-
-
-
+            Clean, conversion-focused design meets scalable, fast development —
+            all mobile-ready.
           </p>{" "}
         </div>
-        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] right-[25%] translate-x-1/2 translate-y-1/2 px-4 py-2 flex flex-col md:text-center md:items-center gap-1 text-sm">
-          <LaptopMinimalCheck className="bg-neutral-800 rounded-md p-2 size-10 md:size-12 mb-4" />
-          <h1 className="md:text-2xl text-md tracking-tight leading-tight">
-            Hire with confidence
- 
+        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] right-[25%] md:right-[20%] translate-x-1/2 translate-y-1/2 px-4 py-2 flex flex-col  gap-1 text-sm">
+          <LaptopMinimalCheck className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
+          <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
+            4. Testing & Launch
           </h1>
           <p className="md:text-sm text-xs text-neutral-400 max-w-xs">
             {" "}
-            No resume roulette. No recruiter noise. Just signal-rich candidates, ready to interview.
+            Final tweaks, speed optimizations, and launch — ready to go live in
+            just 7 days.
           </p>{" "}
         </div>
       </div>

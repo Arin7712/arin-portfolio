@@ -43,7 +43,7 @@ const Navbar1 = () => {
   }, []);
 
   return (
-    <div className="flex justify-center w-full fixed top-0 z-50 pt-4">
+    <div className="flex justify-center w-full  top-0 z-50 pt-4">
       <motion.div
         animate={
           isDesktop

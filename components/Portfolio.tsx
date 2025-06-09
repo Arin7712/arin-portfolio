@@ -64,9 +64,9 @@ const Portfolio = () => {
         {visiblePortfolios.map((item, index) => (
           <div
             key={index}
-            className="w-full shadow-lg md:shadow-xl p-2 gap-6 bg-white rounded-4xl flex md:flex-row flex-col justify-between"
+            className="w-full shadow-lg p-2 gap-6 bg-white rounded-4xl flex md:flex-row flex-col justify-between"
           >
-            <div className="md:w-[50%] bg-neutral-200 px-6 md:px-[2rem] py-8 md:py-[6rem] rounded-4xl">
+            <div className="md:w-[50%] bg-gray-100 px-6 md:px-[2rem] py-8 md:py-[5rem] rounded-4xl">
               <Image
                 src={item.image}
                 alt={item.name}

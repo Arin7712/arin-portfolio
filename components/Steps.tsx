@@ -73,7 +73,7 @@ const Steps = () => {
         </div>
 
         {/* Step Cards */}
-        <div className="absolute w-[50%] top-[22%] md:top-[25%] left-[22%] md:left-[25%] -translate-x-1/2 -translate-y-1/2 px-4 py-2 text-sm flex flex-col  gap-1">
+        <div className="absolute w-[50%] top-[18%] md:top-[25%] left-[22%] md:left-[25%] -translate-x-1/2 -translate-y-1/2 px-4 py-2 text-sm flex flex-col gap-1">
           <PhoneCall className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
           <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
             1. Discovery Call
@@ -94,7 +94,7 @@ const Steps = () => {
             clarity and flow.
           </p>{" "}
         </div>
-        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] left-[22%] md:left-[25%] -translate-x-1/2 translate-y-1/2  px-4 py-2 text-sm flex flex-col  gap-1">
+        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] left-[22%] md:left-[25%] -translate-x-1/2 translate-y-1/2 pl-4  md:px-4 py-2 text-sm flex flex-col  gap-1">
           <FileUser className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
           <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
             3. Design & Build
@@ -105,7 +105,7 @@ const Steps = () => {
             all mobile-ready.
           </p>{" "}
         </div>
-        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] right-[25%] md:right-[20%] translate-x-1/2 translate-y-1/2 px-4 py-2 flex flex-col  gap-1 text-sm">
+        <div className="absolute w-[50%] bottom-[20%] md:bottom-[25%] right-[25%] md:right-[20%] translate-x-1/2 translate-y-1/2 pl-4 md:px-4 py-2 flex flex-col  gap-1 text-sm">
           <LaptopMinimalCheck className="bg-neutral-800 rounded-md p-3 size-10 md:size-12 mb-4 text-orange-500" />
           <h1 className="md:text-xl font-semibold text-md tracking-tight leading-tight">
             4. Testing & Launch

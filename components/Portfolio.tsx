@@ -32,11 +32,11 @@ const portfolio = [
     link: "https://saasboomi.vercel.app/",
   },
   {
-    image: "/project3.png",
-    title: "Sales",
-    name: "Quantumflux",
-    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
-    link: "https://saasboomi.vercel.app/",
+    image: "/project4.png",
+    title: "Marketing",
+    name: "Vision",
+    description: "A website that drives leads and growth with conversion-focused design.",
+    link: "https://ads-agency-mockup.vercel.app/",
   },
 ];
 

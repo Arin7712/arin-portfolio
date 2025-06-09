@@ -14,21 +14,21 @@ const portfolio = [
     image: "/project1.png",
     title: "Saas",
     name: "SaasBoomi",
-    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We designed their website to feel as premium as their brand—elevating trust and positioning.",
     link: "https://saasboomi.vercel.app/",
   },
   {
     image: "/project2.png",
     title: "Sales",
     name: "Scooter AI",
-    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We redesigned their website to secure a funding round.",
     link: "https://saasboomi.vercel.app/",
   },
   {
     image: "/project3.png",
-    title: "Sales",
+    title: "Software",
     name: "Quantumflux",
-    description: "We redesigned their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "A conversion-focused website that drives leads and growth.",
     link: "https://saasboomi.vercel.app/",
   },
   {
@@ -56,7 +56,7 @@ const Portfolio = () => {
           <p className={font.className}>✨ Portfolio</p>
         </div>
         <h1 className="md:text-4xl text-3xl font-medium">
-          Websites that convert - <br /> And look damm good doing it
+          Results In Action
         </h1>
       </div>
 
@@ -89,7 +89,7 @@ const Portfolio = () => {
               <div className="border-t-[1px] py-6 w-full md:mt-0 mt-10">
                 <Link href={item.link}>
                   <Button className="px-6 rounded-full">
-                    View site <MoveRight />
+                    Explore the Site <MoveRight />
                   </Button>
                 </Link>
               </div>

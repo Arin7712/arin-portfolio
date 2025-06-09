@@ -26,7 +26,7 @@ const About = () => {
 
         {/* Tag */}
         <motion.div {...fadeIn(0)} className="flex flex-col gap-4 max-w-xl items-center">
-          <div className="bg-neutral-100 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
+          <div className="bg-neutral-100 text-neutral-800 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
             <p className={font.className}>✨ About</p>
           </div>
         </motion.div>
@@ -37,8 +37,8 @@ const About = () => {
         </motion.h1>
 
         {/* Card Container */}
-        <motion.div {...fadeIn(0.4)} className="bg-white rounded-xl p-2 md:max-w-6xl mt-6 md:mt-[4rem]">
-          <div className="rounded-xl p-6 bg-neutral-100 space-y-6 flex md:flex-row flex-col gap-10">
+        <motion.div {...fadeIn(0.4)} className="bg-white shadow-lg md:shadow-xl rounded-xl p-2 md:max-w-6xl mt-6 md:mt-[4rem]">
+          <div className="rounded-xl p-6 bg-zinc-100 space-y-6 flex md:flex-row flex-col gap-10">
             
             {/* Image */}
             <motion.div {...fadeIn(0.6)}>
@@ -52,26 +52,27 @@ const About = () => {
             </motion.div>
 
             {/* Text Content */}
-            <motion.div {...fadeIn(0.8)} className="space-y-4 flex flex-col justify-center">
+            <motion.div {...fadeIn(0.8)} className="space-y-4 flex flex-col justify-center text-neutral-800">
               <h1 className="text-2xl font-medium">Arin Gawande</h1>
               <div className="text-md text-neutral-500 max-w-md space-y-4">
                 <p>
                   Hey, I’m Arin — a 16-year-old web designer and developer
-                  helping startups launch fast, conversion-focused websites.
+                  helping startups launch fast, <span className="font-medium text-neutral-800">conversion-focused
+                    </span> websites.
                 </p>
                 <p>
                   I work closely with early-stage founders to turn ideas into
-                  clean, high-performing websites that drive leads and growth.
+                  clean, high-performing websites that <span className="font-medium text-neutral-800">drive leads and growth.</span>
                   Every site I build is tailored, fast, and focused on results — not fluff.
                 </p>
                 <p>
                   You work directly with me, no middlemen. I take on only a few
-                  projects at a time to ensure high quality and fast delivery.
+                  projects at a time to ensure <span className="font-medium text-neutral-800">high quality</span> and fast delivery.
                 </p>
               </div>
 
               {/* CTA Button */}
-              <motion.div {...fadeIn(1.0)}>
+              <motion.div {...fadeIn(1.0)} className="pt-2">
                 <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20 w-fit">
                   Schedule call
                   <MoveRight />

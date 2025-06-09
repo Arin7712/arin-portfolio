@@ -1,7 +1,7 @@
 import About from '@/components/About'
 import Hero from '@/components/hero'
 import Portfolio from '@/components/Portfolio'
-import Steps from '@/components/Steps'
+import Testimonials from '@/components/Testimonials'
 import React from 'react'
 
 const page = () => {
@@ -11,6 +11,7 @@ const page = () => {
       <Portfolio/>
       {/* <Steps/> */}
       <About/>
+      <Testimonials/>
     </div>
   )
 }

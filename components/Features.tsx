@@ -27,7 +27,7 @@ const Features = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="md:text-4xl text-3xl font-medium">
+        <h1 className="md:text-4xl text-3xl font-medium text-center">
           All the our websites include
         </h1>
 
@@ -125,7 +125,7 @@ const Features = () => {
             </div>
           </div>
         </div>
-         <Button className="px-6 py-4 pt-[4rem] text-sm rounded-full gap-6 bg-neutral-800 z-20 w-fit">
+         <Button className="px-6 py-4 mt-[4rem] text-sm rounded-full gap-6 bg-neutral-800 z-20 w-fit">
             Contact Us
             <MoveRight />
           </Button>

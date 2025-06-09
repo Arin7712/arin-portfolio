@@ -9,6 +9,7 @@ import Testimonials from '@/components/Testimonials'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -49,9 +50,11 @@ const page = () => {
         <div
           className="flex flex-col gap-2 justify-between items-center"
         >
-          <Button className="bg-[#cfff92] px-6 rounded-full py-6 z-50 hover:cursor-pointer text-neutral-800">
+          <Link href="https://calendly.com/aringawande7712/30min">
+          <Button className="bg-[#cfff92] hover:bg-[#cfff92] px-6 rounded-full py-6 z-50 hover:cursor-pointer text-neutral-800">
             Book my Free Call <ArrowRight className="size-5" />
           </Button>
+          </Link>
           <p className="text-xs max-w-xs font-medium z-50 text-neutral-300">
             Takes less than 15 seconds to schedule. No obligation. Just honest advice.
           </p>

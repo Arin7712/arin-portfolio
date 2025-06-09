@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Features from '@/components/Features'
 import Hero from '@/components/hero'
 import Portfolio from '@/components/Portfolio'
 import Testimonials from '@/components/Testimonials'
@@ -12,6 +13,7 @@ const page = () => {
       {/* <Steps/> */}
       <About/>
       <Testimonials/>
+      <Features/>
     </div>
   )
 }

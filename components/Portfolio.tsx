@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Inter } from "next/font/google";
 import Image from "next/image";
@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const font = Inter({ weight: ["400", "500", "600", "700"], subsets: ["latin"] });
 
@@ -40,30 +41,50 @@ const portfolio = [
   },
 ];
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, delay: i * 0.3 },
+  }),
+};
+
 const Portfolio = () => {
   const [visibleCount, setVisibleCount] = useState(3);
 
   const handleLoadMore = () => {
-    setVisibleCount(portfolio.length); // Show all on click
+    setVisibleCount(portfolio.length);
   };
 
   const visiblePortfolios = portfolio.slice(0, visibleCount);
 
   return (
     <div className="flex flex-col items-center text-center py-[6rem] md:px-0 px-6 bg-neutral-50 text-neutral-800">
-      <div className="flex flex-col gap-4 max-w-xl items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+        className="flex flex-col gap-4 max-w-xl items-center"
+      >
         <div className="bg-neutral-100 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
           <p className={font.className}>✨ Portfolio</p>
         </div>
         <h1 className="md:text-4xl text-3xl font-medium">
           Results In Action
         </h1>
-      </div>
+      </motion.div>
 
       <div className="md:pt-[6rem] pt-[4rem] space-y-8 max-w-7xl">
         {visiblePortfolios.map((item, index) => (
-          <div
+          <motion.div
             key={index}
+            custom={index}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={itemVariants}
             className="w-full shadow-lg p-2 gap-6 bg-white rounded-4xl flex md:flex-row flex-col justify-between"
           >
             <div className="md:w-[50%] bg-gray-100 px-6 md:px-[2rem] py-8 md:py-[5rem] rounded-4xl">
@@ -94,16 +115,22 @@ const Portfolio = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
       {visibleCount < portfolio.length && (
-        <div className="md:pt-[6rem] pt-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="md:pt-[6rem] pt-6"
+        >
           <Button className="px-6 rounded-full py-2" onClick={handleLoadMore}>
             Load more
           </Button>
-        </div>
+        </motion.div>
       )}
     </div>
   );

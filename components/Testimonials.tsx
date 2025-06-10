@@ -1,8 +1,13 @@
+"use client";
+
 import { MoveRight, Star } from "lucide-react";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import ActionButton from "./ActionButton";
 
 // Testimonials data
 const testimonials = [
@@ -40,23 +45,46 @@ const font = Inter({
   subsets: ["latin"],
 });
 
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      delay: i * 0.3,
+    },
+  }),
+};
+
 const Testimonials = () => {
   return (
     <div className="flex flex-col py-[6rem] md:px-0 px-6 items-center w-full bg-neutral-50 text-neutral-800">
       <div className="md:w-7xl flex flex-col justify-between items-center">
-        <div className="flex flex-col gap-4 max-w-xl items-center">
+        {/* Section Header */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="flex flex-col gap-4 max-w-xl items-center"
+        >
           <div className="bg-neutral-100 text-neutral-800 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
             <p className={font.className}>✨ Testimonials</p>
           </div>
-        </div>
+          <h1 className="md:text-4xl text-3xl font-medium">What People Say</h1>
+        </motion.div>
 
-        {/* Heading */}
-        <h1 className="md:text-4xl text-3xl font-medium">What People Say</h1>
-
+        {/* Testimonials Grid */}
         <div className="pt-[4rem] grid md:grid-cols-3 gap-6">
           {testimonials.map((item, i) => (
-            <div
+            <motion.div
               key={i}
+              custom={i}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+              variants={cardVariants}
               className="bg-neutral-100 space-y-6 border-[1px] border-neutral-300 p-6 rounded-xl w-full md:w-sm"
             >
               <div className="space-y-2">
@@ -77,7 +105,7 @@ const Testimonials = () => {
               <div className="flex items-center gap-2">
                 <Image
                   src={item.image}
-                  alt="t2"
+                  alt={item.name}
                   width={40}
                   height={40}
                   className="rounded-full"
@@ -91,17 +119,21 @@ const Testimonials = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="pt-[4rem] flex flex-col items-center gap-2 text-center">
-            <h1 className="text-lg">Want similar results for your startup?</h1>
-          <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20 w-fit">
-            Let's talk
-            <MoveRight />
-          </Button>
-        </div>
+        {/* CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.6 }}
+          viewport={{ once: true }}
+          className="pt-[4rem] flex flex-col items-center gap-2 text-center"
+        >
+          <h1 className="text-lg">Want similar results for your startup?</h1>
+          <ActionButton title="Let's talk" />
+        </motion.div>
       </div>
     </div>
   );

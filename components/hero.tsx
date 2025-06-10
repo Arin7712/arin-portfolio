@@ -8,6 +8,9 @@ import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { Inter } from "next/font/google";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
+import ActionButton from "./ActionButton";
 
 const font = Inter({
   weight: ["400", "500", "600", "700"],
@@ -72,14 +75,17 @@ const Hero = () => {
           with conversion-focused websites.
         </motion.p>
 
-        <motion.div className="flex md:flex-row flex-col items-center gap-6" variants={fadeInUp}>
-          <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20">
-            Book a Free Strategy Call
-            <MoveRight />
-          </Button>
-          <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
-            View Case Study
-          </Button>
+        <motion.div
+          className="flex md:flex-row flex-col items-center gap-6"
+          variants={fadeInUp}
+        >
+          <ActionButton title="Book a Free Strategy Call" />
+
+          <ScrollLink to="portfolio" smooth={true} duration={1000}>
+            <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
+              View Case Study
+            </Button>
+          </ScrollLink>
         </motion.div>
 
         <motion.div

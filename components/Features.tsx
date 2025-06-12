@@ -101,8 +101,8 @@ const Features = () => {
           {[
             {
               icon: Grid2x2Check,
-              title: "Built-In Trust Elements",
-              desc: "Includes testimonials and brand positioning that shows your credibility instantly.",
+              title: "Smart Analytics",
+              desc: "Track visits, clicks, and conversions to see what’s working — & grow with data-driven decisions.",
             },
             {
               icon: Rocket,

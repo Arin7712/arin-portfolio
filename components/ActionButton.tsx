@@ -6,7 +6,7 @@ import { MoveRight } from "lucide-react";
 const ActionButton = ({title}: {title: string}) => {
   return (
     <Link href="https://calendly.com/aringawande7712/30min">
-      <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-neutral-800 z-20 hover:cursor-pointer">
+      <Button className="px-6 py-4 text-sm rounded-full gap-6 bg-[#C79EF2] text-neutral-800 z-20 hover:cursor-pointer hover:text-neutral-100">
         {title}
         <MoveRight />
       </Button>

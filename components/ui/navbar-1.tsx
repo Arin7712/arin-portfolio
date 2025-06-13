@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bell, Menu, X } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
+import Image from "next/image";
 
 const navItems = [
   { name: "About", href: "about" },
@@ -65,22 +66,7 @@ const Navbar1 = () => {
             whileHover={{ rotate: 10 }}
             transition={{ duration: 0.3 }}
           >
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="16" fill="url(#paint0_linear)" />
-              <defs>
-                <linearGradient
-                  id="paint0_linear"
-                  x1="0"
-                  y1="0"
-                  x2="32"
-                  y2="32"
-                  gradientUnits="userSpaceOnUse"
-                >
-                  <stop stopColor="#FF9966" />
-                  <stop offset="1" stopColor="#FF5E62" />
-                </linearGradient>
-              </defs>
-            </svg>
+            <Image src='/logo.png' alt="Logo" width={32} height={32} />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -123,7 +109,7 @@ const Navbar1 = () => {
           >
             Get Started
           </Link>
-          <Bell className="bg-neutral-200 text-neutral-800 rounded-full p-2 size-9 hover:cursor-pointer hover:border-[1px] hover:bg-neutral-800 hover:text-neutral-200 transition-colors" />
+          <Bell className="bg-[#C79EF2] text-neutral-800 rounded-full p-2 size-9 hover:cursor-pointer hover:border-[1px] hover:bg-neutral-800 hover:text-neutral-200 transition-colors" />
         </motion.div>
 
         {/* Mobile Menu Button */}

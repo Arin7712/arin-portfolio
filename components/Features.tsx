@@ -84,7 +84,7 @@ const Features = () => {
               >
                 <div className="bg-neutral-100 border-[1px] px-6 rounded-4xl w-full p-6 space-y-6 pb-[4rem] h-full">
                   <div className="p-1 bg-white rounded-md w-fit shadow-md">
-                    <item.icon className="p-3 rounded-md text-neutral-800 bg-neutral-100 size-15" />
+                    <item.icon className="p-3 rounded-md text-orange-500 bg-neutral-100 size-15" />
                   </div>
                   <h1 className="text-xl font-medium tracking-tight">
                     {item.title}
@@ -122,7 +122,7 @@ const Features = () => {
             >
               <div className="bg-neutral-100 border-[1px] px-6 rounded-4xl w-full p-6 space-y-6 pb-[4rem] h-full">
                 <div className="p-1 bg-white rounded-md w-fit shadow-md">
-                  <item.icon className="p-3 rounded-md text-neutral-800 bg-neutral-100 size-15" />
+                  <item.icon className="p-3 rounded-md text-orange-500 bg-neutral-100 size-15" />
                 </div>
                 <h1 className="text-xl font-medium tracking-tight">
                   {item.title}
@@ -159,7 +159,7 @@ const Features = () => {
             >
               <div className="bg-neutral-100 border-[1px] px-6 rounded-4xl w-full p-6 space-y-6 pb-[4rem] h-full">
                 <div className="p-1 bg-white rounded-md w-fit shadow-md">
-                  <item.icon className="p-3 rounded-md text-neutral-800 bg-neutral-100 size-15" />
+                  <item.icon className="p-3 rounded-md text-orange-500 bg-neutral-100 size-15" />
                 </div>
                 <h1 className="text-xl font-medium tracking-tight">
                   {item.title}

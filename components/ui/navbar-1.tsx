@@ -66,7 +66,7 @@ const Navbar1 = () => {
             whileHover={{ rotate: 10 }}
             transition={{ duration: 0.3 }}
           >
-            <Image src='/logo.png' alt="Logo" width={32} height={32} />
+            <Image src='/logo2.png' alt="Logo" width={32} height={32} />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -109,7 +109,7 @@ const Navbar1 = () => {
           >
             Get Started
           </Link>
-          <Bell className="bg-[#C79EF2] text-neutral-800 rounded-full p-2 size-9 hover:cursor-pointer hover:border-[1px] hover:bg-neutral-800 hover:text-neutral-200 transition-colors" />
+          <Bell className="bg-orange-500 text-neutral-100 rounded-full p-2 size-9 hover:cursor-pointer hover:border-[1px] hover:bg-neutral-800 hover:text-neutral-200 transition-colors" />
         </motion.div>
 
         {/* Mobile Menu Button */}

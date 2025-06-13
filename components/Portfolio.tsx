@@ -98,7 +98,7 @@ const Portfolio = () => {
             </div>
             <div className="md:w-[50%] md:px-0 px-4 pr-0 py-4 md:pr-10 flex flex-col justify-between items-start text-start">
               <div className="space-y-4">
-                <div className="bg-neutral-100 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
+                <div className="bg-neutral-100 text-orange-500 font-medium border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 z-40">
                   <p className={font.className}>{item.title}</p>
                 </div>
                 <h1 className="text-3xl font-semibold">{item.name}</h1>
@@ -109,7 +109,7 @@ const Portfolio = () => {
 
               <div className="border-t-[1px] py-6 w-full md:mt-0 mt-10">
                 <Link href={item.link}>
-                  <Button className="px-6 rounded-full">
+                  <Button className="px-6 rounded-full bg-neutral-100 text-orange-500 border-[1px]">
                     Explore the Site <MoveRight />
                   </Button>
                 </Link>

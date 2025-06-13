@@ -93,7 +93,7 @@ const page = () => {
             className="flex flex-col gap-2 justify-between items-center"
           >
             <Link href="https://calendly.com/aringawande7712/30min">
-              <Button className="bg-[#C79EF2] hover:bg-[#C79EF2] px-6 rounded-full py-6 z-50 hover:cursor-pointer text-neutral-800">
+              <Button className="bg-orange-500 hover:bg-[#C79EF2] px-6 rounded-full py-6 z-50 hover:cursor-pointer text-neutral-100">
                 Book my Free Call <ArrowRight className="size-5" />
               </Button>
             </Link>

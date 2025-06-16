@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import Link from "next/link";
 import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { link } from "fs";
 
 const font = Inter({ weight: ["400", "500", "600", "700"], subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ const portfolio = [
     title: "Nutrition",
     name: "P-NUT",
     description: "A conversion-focused website that drives leads and growth.",
+    link: "https://personalnutrition.vercel.app/",
   },
   {
     image: "/project3.png",

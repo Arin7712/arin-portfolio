@@ -19,17 +19,23 @@ const portfolio = [
     link: "https://saasboomi.vercel.app/",
   },
   {
-    image: "/project2.png",
-    title: "Sales",
-    name: "Scooter AI",
-    description: "We redesigned their website to secure a funding round.",
-    link: "https://saasboomi.vercel.app/",
+    image: "/project5.png",
+    title: "Nutrition",
+    name: "P-NUT",
+    description: "A conversion-focused website that drives leads and growth.",
   },
   {
     image: "/project3.png",
     title: "Software",
     name: "Quantumflux",
     description: "A conversion-focused website that drives leads and growth.",
+    link: "https://saasboomi.vercel.app/",
+  },
+    {
+    image: "/project2.png",
+    title: "Sales",
+    name: "Scooter AI",
+    description: "We redesigned their website to secure a funding round.",
     link: "https://saasboomi.vercel.app/",
   },
   {

@@ -82,7 +82,7 @@ const Hero = () => {
           <ActionButton title="Book a Free Strategy Call" />
 
           <ScrollLink to="portfolio" smooth={true} duration={1000}>
-            <Button className="underline hover:text-[#C79EF2] bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
+            <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
               View Case Study
             </Button>
           </ScrollLink>

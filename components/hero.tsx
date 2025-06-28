@@ -1,19 +1,16 @@
 "use client";
 import React from "react";
 import { Button } from "./ui/button";
-import { MoveRight } from "lucide-react";
 import Image from "next/image";
 import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { Inter } from "next/font/google";
-import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
 import ActionButton from "./ActionButton";
 
 const font = Inter({
-  weight: ["400", "500", "600", "700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -33,14 +30,14 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="h-screen relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
+    <div className="md:h-[98vh] h-[100vh] relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
         duration={3}
         repeatDelay={1}
         className={cn(
-          "absolute inset-0 w-full h-full opacity-58",
+          "absolute inset-0 w-full h-full opacity-60",
           "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
           "mask-size-100 mask-repeat-no-repeat",
           "pointer-events-none"
@@ -56,36 +53,48 @@ const Hero = () => {
         <motion.div
           initial="hidden"
           animate="visible"
-          className="bg-neutral-100 border-[1px] border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40"
+          className="bg-neutral-50 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 pr-2 py-1 z-40"
         >
-          <p className={font.className}>✨ Trusted by Growing Businesses</p>
+          <motion.div className="bg-neutral-100/40 flex items-center gap-1 border-[1px] px-2 py-1 border-neutral-300 rounded-full">
+            <div className="bg-orange-400/20 p-1 flex items-center justify-center rounded-full border-[1px] border-orange-400/10">
+              <div className="bg-orange-500 size-2 rounded-full"></div>
+            </div>
+            <p>We're Live</p>
+          </motion.div>
+          <p className={`${font.className}`}>Only 2 Spots for July</p>
         </motion.div>
         <motion.h1
-          className="md:text-5xl text-4xl tracking-tight font-medium"
+          className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
           Websites That Drive More Leads, Sales, and Growth.{" "}
         </motion.h1>
 
         <motion.p
-          className="md:text-lg text-sm leading-tight text-neutral-500 max-w-lg"
+          className="md:text-[1.1rem] text-sm leading-tight text-neutral-600 max-w-lg"
           variants={fadeInUp}
         >
-          Helping startups and businesses 10x their leads and sales in 7 days
-          with conversion-focused websites.
+          Helping a select few ambitious startups 10x their leads and sales with
+          strategic, high-converting websites that close.
         </motion.p>
 
         <motion.div
           className="flex md:flex-row flex-col items-center gap-6"
           variants={fadeInUp}
         >
-          <ActionButton title="Book a Free Strategy Call" />
+          <ActionButton title="Apply for a Strategy Call" />
 
-          <ScrollLink to="portfolio" smooth={true} duration={1000}>
+          {/* <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
               View Case Study
             </Button>
-          </ScrollLink>
+          </ScrollLink> */}
+        </motion.div>
+
+        <motion.div
+        variants={fadeInUp}
+         className="text-xs max-w-xs">
+          I partner with only 2 ambitious founders a month to ensure quality of service.
         </motion.div>
 
         <motion.div
@@ -96,7 +105,7 @@ const Hero = () => {
             className="text-sm text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
             variants={fadeInUp}
           >
-            Client's who've trusted us:
+            Client's who've trusted us
           </motion.p>
 
           <motion.div

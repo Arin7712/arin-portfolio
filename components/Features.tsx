@@ -39,10 +39,13 @@ const Features = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col gap-4 max-w-xl items-center"
+          className="bg-neutral-50 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 py-1 z-40"
         >
-          <div className="bg-neutral-100 text-neutral-800 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
-            <p className={font.className}>✨ Features</p>
+          <div className="bg-neutral-100/40 flex items-center gap-2 border-[1px] px-2 py-1 border-neutral-300 rounded-full">
+            <div className="bg-orange-400/20 p-1 flex items-center justify-center rounded-full border-[1px] border-orange-400/10">
+              <div className="bg-orange-500 size-2 rounded-full"></div>
+            </div>
+            <p>Features</p>
           </div>
         </motion.div>
 

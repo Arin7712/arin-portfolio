@@ -15,6 +15,7 @@ import Link from "next/link";
 import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
+import Pricing from "@/components/Pricing";
 
 // Animation Variants
 const containerVariants = {
@@ -47,6 +48,7 @@ const page = () => {
       <Element name="portfolio">
         <Portfolio />
       </Element>
+      <Pricing/>
       <Element name="testimonials">
         <Testimonials />
       </Element>

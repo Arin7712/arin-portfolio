@@ -67,15 +67,15 @@ const Hero = () => {
           className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
-          Websites That Drive More Leads, Sales, and Growth.{" "}
+          Websites That Drive More Leads, Sales And Growth
+          {" "}
         </motion.h1>
 
         <motion.p
           className="md:text-[1.1rem] text-sm leading-tight text-neutral-600 max-w-lg"
           variants={fadeInUp}
         >
-          Helping a select few ambitious startups 10x their leads and sales with
-          strategic, high-converting websites that close.
+          Helping founders get more qualified leads every month with conversion focused websites without ads spend.
         </motion.p>
 
         <motion.div

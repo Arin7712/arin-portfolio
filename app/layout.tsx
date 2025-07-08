@@ -7,7 +7,7 @@ const font = Manrope({weight: ['400', '500', '600', '700'], subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: "Scale Site",
-  description: "Helping startups and businesses 10x their leads and sales in 7 days with conversion-focused websites.",
+  description: "Helping founders get consistent leads every month with conversion focused websites, without ads spend.",
 };
 
 export default function RootLayout({

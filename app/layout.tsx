@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar1 } from "@/components/ui/navbar-1";
+import { Analytics } from "@vercel/analytics/next"
 
 const font = Manrope({weight: ['400', '500', '600', '700'], subsets: ['latin']}) 
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       >
         <Navbar1/>
         {children}
+        <Analytics/>
       </body>
     </html>
   );

@@ -77,18 +77,18 @@ const Pricing = () => {
 
   return (
     <div className="relative flex flex-col items-center text-center text-neutral-800 py-[6rem] md:px-0 px-6">
-              <AnimatedGridPattern
-                numSquares={20}
-                maxOpacity={0.1}
-                duration={3}
-                repeatDelay={1}
-                className={cn(
-                  "absolute inset-0 w-full h-full opacity-20 z-10 fill-white/80 stroke-white/70",
-                  "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
-                  "mask-size-100 mask-repeat-no-repeat",
-                  "pointer-events-none"
-                )}
-              />
+      <AnimatedGridPattern
+        numSquares={20}
+        maxOpacity={0.1}
+        duration={3}
+        repeatDelay={1}
+        className={cn(
+          "absolute inset-0 w-full h-full opacity-20 z-10 fill-white/80 stroke-white/70",
+          "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
+          "mask-size-100 mask-repeat-no-repeat",
+          "pointer-events-none"
+        )}
+      />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -109,10 +109,10 @@ const Pricing = () => {
           <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
         </div>
         <h1 className="md:text-4xl text-3xl font-medium z-20">
-          Start Creating Effotlessly without burning hole in your pocket
+          Invest in what moves the needle
         </h1>
       </motion.div>
-      <Pricing2Demo/>
+      <Pricing2Demo />
     </div>
   );
 };

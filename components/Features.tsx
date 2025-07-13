@@ -1,5 +1,6 @@
 "use client";
 import {
+  CircleUserRound,
   Grid2x2Check,
   Handshake,
   MonitorSmartphone,
@@ -39,13 +40,19 @@ const Features = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="bg-neutral-50 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 py-1 z-40"
+          className="flex items-center gap-2 text-xs rounded-full px-1 py-1 z-40"
         >
-          <div className="bg-neutral-100/40 flex items-center gap-2 border-[1px] px-2 py-1 border-neutral-300 rounded-full">
-            <div className="bg-orange-400/20 p-1 flex items-center justify-center rounded-full border-[1px] border-orange-400/10">
-              <div className="bg-orange-500 size-2 rounded-full"></div>
+             <div className="flex items-center justify-center gap-2 my-8 z-20">
+            <div className="h-[1px] w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
+
+            <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
+              <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] shadow-sm text-sm font-medium flex items-center gap-1">
+                <CircleUserRound className="size-5 text-orange-500" />
+                <p>Features</p>
+              </div>
             </div>
-            <p>Features</p>
+
+            <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
           </div>
         </motion.div>
 

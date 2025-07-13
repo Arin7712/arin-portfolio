@@ -18,7 +18,7 @@ const demoData = {
       ],
       button: {
         text: "Purchase",
-        url: "https://www.shadcnblocks.com",
+        url: "https://calendly.com/aringawande7712/30min?month=2025-07",
       },
     },
     {
@@ -36,7 +36,7 @@ const demoData = {
       ],
       button: {
         text: "Purchase",
-        url: "https://www.shadcnblocks.com",
+        url: "https://calendly.com/aringawande7712/30min?month=2025-07",
       },
     },
   ],

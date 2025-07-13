@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import { Button } from "./ui/button";
-import { MoveRight } from "lucide-react";
+import { CircleDollarSign, CircleUserRound, MoveRight, SquareUser, UserRoundSearch } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import ActionButton from "./ActionButton";
@@ -28,13 +28,19 @@ const About = () => {
         {/* Tag */}
         <motion.div
           {...fadeIn(0)}
-          className="bg-neutral-50 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 py-1 z-40"
+          className="bg-neutral-50  flex items-center gap-2 text-xs rounded-full px-1 py-1 z-40"
         >
-          <div className="bg-neutral-100/40 flex items-center gap-2 border-[1px] px-2 py-1 border-neutral-300 rounded-full">
-            <div className="bg-orange-400/20 p-1 flex items-center justify-center rounded-full border-[1px] border-orange-400/10">
-              <div className="bg-orange-500 size-2 rounded-full"></div>
+          <div className="flex items-center justify-center gap-2 my-8 z-20">
+            <div className="h-[1px] w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
+
+            <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
+              <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] shadow-sm text-sm font-medium flex items-center gap-1">
+                <CircleUserRound className="size-5 text-orange-500" />
+                <p>About</p>
+              </div>
             </div>
-            <p>About</p>
+
+            <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
           </div>
         </motion.div>
 
@@ -71,25 +77,25 @@ const About = () => {
               <h1 className="text-2xl font-medium">Arin Gawande</h1>
               <div className="text-md text-neutral-500 max-w-md space-y-4">
                 <p>
-                  Hey, I’m Arin — a 16-year-old web designer and developer
-                  helping startups launch fast,{" "}
+                  Hey, I’m Arin a 16 year old web designer and developer
+                  helping founders get <span className="font-medium text-neutral-800">more leads every month</span> with{" "}
                   <span className="font-medium text-neutral-800">
                     conversion-focused
                   </span>{" "}
-                  websites.
+                  websites, no ads spend.
                 </p>
                 <p>
                   I work closely with early-stage founders to turn ideas into
                   clean, high-performing websites that{" "}
                   <span className="font-medium text-neutral-800">
-                    drive leads and growth.
+                    drive leads and growth.{" "}
                   </span>
-                  Every site I build is tailored, fast, and focused on results —
+                   Every site I build is tailored, fast, and focused on results,
                   not fluff.
                 </p>
                 <p>
-                  You work directly with me, no middlemen. I take on only a few
-                  projects at a time to ensure{" "}
+                  You work directly with me, no middlemen. I only take 2 
+                  projects a month to ensure{" "}
                   <span className="font-medium text-neutral-800">
                     high quality
                   </span>{" "}

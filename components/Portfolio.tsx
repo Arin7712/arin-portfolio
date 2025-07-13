@@ -1,22 +1,25 @@
-'use client';
+"use client";
 
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { MoveRight } from "lucide-react";
+import { CircleUserRound, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { link } from "fs";
 
-const font = Inter({ weight: ["400", "500", "600", "700"], subsets: ["latin"] });
+const font = Inter({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 const portfolio = [
   {
     image: "/project1.png",
     title: "Saas",
     name: "SaasBoomi",
-    description: "We designed their website to feel as premium as their brand—elevating trust and positioning.",
+    description: "We designed their website to feel as premium as their brand, elevating trust and positioning.",
     link: "https://saasboomi.vercel.app/",
   },
   {
@@ -33,7 +36,7 @@ const portfolio = [
     description: "A conversion-focused website that drives leads and growth.",
     link: "https://saasboomi.vercel.app/",
   },
-    {
+  {
     image: "/project2.png",
     title: "Sales",
     name: "Scooter AI",
@@ -44,7 +47,8 @@ const portfolio = [
     image: "/project4.png",
     title: "Marketing",
     name: "Vision",
-    description: "A website that drives leads and growth with conversion-focused design.",
+    description:
+      "A website that drives leads and growth with conversion-focused design.",
     link: "https://ads-agency-mockup.vercel.app/",
   },
 ];
@@ -74,13 +78,23 @@ const Portfolio = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex flex-col gap-4 max-w-xl items-center"
+        className="flex flex-col max-w-xl items-center"
       >
-        <div className="bg-neutral-100 border-[1px] w-fit border-neutral-300 text-xs rounded-full px-8 py-1 uppercase z-40">
-          <p className={font.className}>✨ Portfolio</p>
+        <div className="flex items-center justify-center gap-2 my-8 z-20">
+          <div className="h-[1px] w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
+
+          <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
+            <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] shadow-sm text-sm font-medium flex items-center gap-1">
+              <CircleUserRound className="size-5 text-orange-500" />
+              <p>Portfolio</p>
+            </div>
+          </div>
+
+          <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
         </div>
-        <h1 className="md:text-4xl text-3xl font-medium">
-          Results In Action
+
+        <h1 className="md:text-4xl text-3xl font-medium text-center">
+          Results in Action
         </h1>
       </motion.div>
 
@@ -117,8 +131,9 @@ const Portfolio = () => {
 
               <div className="border-t-[1px] py-6 w-full md:mt-0 mt-10">
                 <Link href={item.link}>
-                  <Button className="px-6 rounded-full bg-neutral-100 text-orange-500 border-[1px]">
-                    Explore the Site <MoveRight />
+      <Button className="px-1 pl-4 py-4 tracking-tight text-sm rounded-full gap-4 bg-orange-500 text-neutral-100 z-20 hover:cursor-pointer hover:text-neutral-100">
+                    Explore the Site 
+        <MoveRight className="bg-white p-2 rounded-full text-orange-500 size-8"/>
                   </Button>
                 </Link>
               </div>

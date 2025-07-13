@@ -43,7 +43,7 @@ const Features = () => {
           className="flex items-center gap-2 text-xs rounded-full px-1 py-1 z-40"
         >
              <div className="flex items-center justify-center gap-2 my-8 z-20">
-            <div className="h-[1px] w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
+            <div className="h-[1px] w-20 md:w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
 
             <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
               <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] shadow-sm text-sm font-medium flex items-center gap-1">
@@ -52,7 +52,7 @@ const Features = () => {
               </div>
             </div>
 
-            <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
+            <div className="h-[1px] w-20 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
           </div>
         </motion.div>
 

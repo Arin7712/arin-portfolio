@@ -70,7 +70,7 @@ const Testimonials = () => {
           className="flex flex-col gap-4 max-w-xl items-center"
         >
           <div className="flex items-center justify-center gap-2 my-8 z-20">
-            <div className="h-[1px] w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
+            <div className="h-[1px] w-20 md:w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
 
             <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
               <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] shadow-sm text-sm font-medium flex items-center gap-1">
@@ -79,12 +79,12 @@ const Testimonials = () => {
               </div>
             </div>
 
-            <div className="h-[1px] w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
+            <div className="h-[1px] w-20 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
           </div>
         </motion.div>
 
         {/* Testimonials Grid */}
-        <div className="pt-[4rem] grid md:grid-cols-3 gap-6">
+        <div className="pt-[4rem] grid md:grid-cols-3 gap-6 place-items-center">
           {testimonials.map((item, i) => (
             <motion.div
               key={i}
@@ -93,7 +93,7 @@ const Testimonials = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={cardVariants}
-              className="bg-neutral-100 space-y-6 border-[1px] border-neutral-300 p-6 rounded-xl w-full md:w-sm"
+              className="bg-neutral-100 space-y-6 border-[1px] border-neutral-300 p-6 rounded-xl md:w-sm"
             >
               <div className="space-y-2">
                 <h1 className="text-xl tracking-tight font-medium">

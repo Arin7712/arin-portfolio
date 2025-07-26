@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     name: "Ritesh Raut",
-    tag: "Our Conversions Doubled in 2 Weeks",
+    tag: "Our Conversions Doubled in just 2 Weeks",
     image: "/t1.png",
     title: "Founder",
     company: "Quantumflux",
@@ -93,7 +93,7 @@ const Testimonials = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               variants={cardVariants}
-              className="bg-neutral-100 space-y-6 border-[1px] border-neutral-300 p-6 rounded-xl md:w-sm"
+              className="bg-neutral-100 space-y-6 h-full flex flex-col justify-between border-[1px] border-neutral-300 p-6 rounded-xl md:w-sm"
             >
               <div className="space-y-2">
                 <h1 className="text-xl tracking-tight font-medium">

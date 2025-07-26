@@ -30,7 +30,7 @@ const fadeInUp = {
 
 const Hero = () => {
   return (
-    <div className="md:h-[98vh] h-[100vh] relative md:pt-0 pt-[12rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
+    <div className="md:h-[98vh] h-[100vh] relative md:pt-0 pt-[8rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -67,15 +67,15 @@ const Hero = () => {
           className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
-          Websites That Drive More Leads, Sales And Growth
+          Websites That Drive Turn Traffic Into Booked Calls
           {" "}
         </motion.h1>
 
         <motion.p
-          className="md:text-[1.1rem] text-sm leading-tight text-neutral-600 max-w-lg"
+          className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
           variants={fadeInUp}
         >
-          Helping founders get more qualified leads every month with conversion focused websites without ads spend.
+        Helping B2B service providers turn their traffic into booked sales calls with websites that speak to their ideal client and drive action.
         </motion.p>
 
         <motion.div

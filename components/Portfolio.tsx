@@ -34,14 +34,14 @@ const portfolio = [
     title: "Software",
     name: "Quantumflux",
     description: "A conversion-focused website that drives leads and growth.",
-    link: "https://saasboomi.vercel.app/",
+    link: "https://quantumflux.in/",
   },
   {
     image: "/project2.png",
     title: "Sales",
     name: "Scooter AI",
     description: "We redesigned their website to secure a funding round.",
-    link: "https://saasboomi.vercel.app/",
+    link: "https://www.thescooter.ai/",
   },
   {
     image: "/project4.png",

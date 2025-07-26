@@ -67,7 +67,7 @@ const Hero = () => {
           className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
-          Websites That Drive Turn Traffic Into Booked Calls
+          Websites That Turn Traffic Into Booked Calls
           {" "}
         </motion.h1>
 

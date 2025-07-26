@@ -16,6 +16,7 @@ import React from "react";
 import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import Pricing from "@/components/Pricing";
+import ActionButton from "@/components/ActionButton";
 
 // Animation Variants
 const containerVariants = {
@@ -94,11 +95,8 @@ const page = () => {
             custom={1}
             className="flex flex-col gap-2 justify-between items-center"
           >
-            <Link href="https://calendly.com/aringawande7712/30min">
-              <Button className="bg-orange-500 hover:bg-orange-500 px-6 rounded-full py-6 z-50 hover:cursor-pointer text-neutral-100">
-                Book my Free Call <ArrowRight className="size-5" />
-              </Button>
-            </Link>
+                      <ActionButton title="Book a Free Call" />
+
             <p className="text-xs max-w-xs font-medium z-50 text-neutral-300">
               Takes less than 15 seconds to schedule. No obligation. Just honest
               advice.

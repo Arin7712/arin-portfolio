@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { InfiniteSlider } from "./ui/infinite-slider";
 import { Inter } from "next/font/google";
 import ActionButton from "./ActionButton";
+import { Cover } from "./ui/cover";
 
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -37,7 +38,7 @@ const Hero = () => {
         duration={3}
         repeatDelay={1}
         className={cn(
-          "absolute inset-0 w-full h-full opacity-60",
+          "absolute inset-0 w-full h-full opacity-70",
           "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
           "mask-size-100 mask-repeat-no-repeat",
           "pointer-events-none"
@@ -67,7 +68,7 @@ const Hero = () => {
           className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
-          Websites That Turn Traffic Into Booked Calls
+          Websites That Turn Traffic Into <Cover>Booked Calls</Cover>
           {" "}
         </motion.h1>
 
@@ -75,7 +76,7 @@ const Hero = () => {
           className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
           variants={fadeInUp}
         >
-        Helping B2B service providers turn their traffic into booked sales calls with websites that speak to their ideal client and drive action.
+        Helping B2B service providers turn their traffic into <span className="text-orange-500 underline italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
         </motion.p>
 
         <motion.div

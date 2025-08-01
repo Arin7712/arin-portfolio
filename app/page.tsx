@@ -17,6 +17,8 @@ import { Element } from "react-scroll";
 import { motion } from "framer-motion";
 import Pricing from "@/components/Pricing";
 import ActionButton from "@/components/ActionButton";
+import CalendlyWidget from "@/components/CalendlyWidget";
+import Comparision from "@/components/Comparision";
 
 // Animation Variants
 const containerVariants = {
@@ -49,7 +51,7 @@ const page = () => {
       <Element name="portfolio">
         <Portfolio />
       </Element>
-      <Pricing/>
+      <Pricing />
       <Element name="testimonials">
         <Testimonials />
       </Element>
@@ -95,7 +97,7 @@ const page = () => {
             custom={1}
             className="flex flex-col gap-2 justify-between items-center"
           >
-                      <ActionButton title="Book a Free Call" />
+            <ActionButton title="Book a Free Call" />
 
             <p className="text-xs max-w-xs font-medium z-50 text-neutral-300">
               Takes less than 15 seconds to schedule. No obligation. Just honest
@@ -104,7 +106,7 @@ const page = () => {
           </motion.div>
         </div>
       </Element>
-
+      {/* <CalendlyWidget/> */}
       <Demo />
     </div>
   );

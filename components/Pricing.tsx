@@ -11,6 +11,7 @@ import { link } from "fs";
 import { Pricing2Demo } from "./Pricing2Demo";
 import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
+import Comparision from "./Comparision";
 
 const font = Inter({
   weight: ["400", "500", "600", "700"],
@@ -76,7 +77,7 @@ const Pricing = () => {
   const visiblePortfolios = portfolio.slice(0, visibleCount);
 
   return (
-    <div className="relative flex flex-col items-center text-center text-neutral-800 py-[6rem] md:px-0 px-6">
+    <div className="relative flex flex-col items-center text-neutral-800 py-[6rem] md:px-0 px-6">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -94,9 +95,9 @@ const Pricing = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="flex flex-col gap-4 max-w-xl items-center md:py-0 py-[2rem]"
+        className="flex flex-col gap-4 max-w-xl items-center md:py-0 py-6"
       >
-        <div className="flex items-center justify-center gap-2 my-8 z-20">
+        <div className="flex items-center justify-center gap-2 z-20">
           <div className="h-[1px] w-20 md:w-32 bg-gradient-to-r from-transparent to-neutral-300"></div>
 
           <div className="border-r-[2px] border-l-[2px] p-1 rounded-3xl">
@@ -112,7 +113,8 @@ const Pricing = () => {
           Invest in what moves the needle
         </h1>
       </motion.div>
-      <Pricing2Demo />
+      <Comparision/>
+      {/* <Pricing2Demo /> */}
     </div>
   );
 };

@@ -7,26 +7,27 @@ import { AnimatedGridPattern } from "./magicui/animated-grid-pattern";
 import ActionButton from "./ActionButton";
 
 const withoutScooter = [
-  "Write a job description from scratch",
-  "Hire an external recruiter or agency (8-15% of CTC)",
-  "Post on multiple platforms and pray for reach",
-  "Sift through 100+ resumes",
-  "Manually filter for basic relevance",
-  "Search LinkedIn to validate claims",
-  "Conduct phone screens to check communication",
+  "Outsourcing everything with no real control",
+  "Push trendy designs without strategy",
+  "Overpromise but underdeliver",
+  "Priotrize design over conversion",
+  "Use bloated templates without customization",
+  "Delay timelines and miss deadlines",
+  "Lack clear communication or project updates",
   "Repeat yourself 10 times per day",
-  "Guess if they actually sold or just supported",
-  "Forget who said what by the 7th call",
-  "Get ghosted after shortlisting",
-  "Chase referrals to fill pipeline",
-  "Realize late they never sold to your ICP or motion",
-  "Figure out too late they lacked grit or coachability",
+  "Focus on visuals and not user experience",
+  "Don't understand your business goals",
+  "No copywriting — you’re left writing your own website content",
+  "Build websites that look good but don't convert",
+  "No post-launch support",
+  "They aren't specialized for only websites",
 ];
 
 const withScooter = [
-  "Share your requirements (<10 minutes)",
-  "Get a ranked shortlist of high-fit, validated candidates in 7–10 days",
-  "You only meet candidates who can actually sell and you see them in action before the first call",
+  "Strategy-first design — we align your website with business goals",
+  "Copy + design + dev — all in one place (no gaps, no delays)",
+  "Real human communication — no ghosting, no vague updates",
+  "Specialized for websites only"
 ];
 
 const Comparision = () => {
@@ -56,7 +57,7 @@ const Comparision = () => {
           <div className="flex items-center gap-3 mb-4">
             <CircleCheckBig className="text-white size-6" />
             <h2 className="text-2xl font-medium text-neutral-100">
-              With ScaleSite
+              What I do
             </h2>
           </div>
 
@@ -85,7 +86,7 @@ const Comparision = () => {
           className="bg-neutral-100 border rounded-xl p-8 flex flex-col min-h-full"
         >
           <h2 className="text-2xl font-medium text-neutral-800 mb-6">
-            Without ScaleSite
+            What other agencies do
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-neutral-500 text-sm">
             {withoutScooter.map((item, i) => (

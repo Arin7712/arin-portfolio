@@ -77,7 +77,7 @@ const Pricing = () => {
   const visiblePortfolios = portfolio.slice(0, visibleCount);
 
   return (
-    <div className="relative flex flex-col items-center text-neutral-800 py-[6rem] md:px-0 px-6">
+    <div className="relative flex flex-col items-center text-neutral-800 py-[6rem] px-0 ">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -109,7 +109,7 @@ const Pricing = () => {
 
           <div className="h-[1px] w-20 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
         </div>
-        <h1 className="md:text-4xl text-3xl font-medium z-20">
+        <h1 className="md:text-4xl text-3xl text-center font-medium z-20">
           Invest in what moves the needle
         </h1>
       </motion.div>

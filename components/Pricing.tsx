@@ -110,7 +110,7 @@ const Pricing = () => {
           <div className="h-[1px] w-20 md:w-32 bg-gradient-to-l from-transparent to-neutral-300"></div>
         </div>
         <h1 className="md:text-4xl text-3xl text-center font-medium z-20">
-          Invest in what moves the needle
+          Invest in what moves the needle (This section is in progress)
         </h1>
       </motion.div>
       <Comparision/>

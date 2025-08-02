@@ -56,7 +56,7 @@ const Comparision = () => {
       />
           <div className="flex items-center gap-3 mb-4">
             <CircleCheckBig className="text-white size-6" />
-            <h2 className="text-2xl font-medium text-neutral-100">
+            <h2 className="text-2xl  italic font-medium text-neutral-100">
               What I do
             </h2>
           </div>

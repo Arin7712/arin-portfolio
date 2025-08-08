@@ -39,9 +39,9 @@ const page = () => {
       <Element name="hero">
         <Hero />
       </Element>
-      <Element name="about">
-        <About />
-      </Element>
+            <Pricing />
+
+
       <Element name="features">
         <Features />
       </Element>
@@ -51,7 +51,9 @@ const page = () => {
       <Element name="portfolio">
         <Portfolio />
       </Element>
-      <Pricing />
+            <Element name="about">
+        <About />
+      </Element>
       <Element name="testimonials">
         <Testimonials />
       </Element>

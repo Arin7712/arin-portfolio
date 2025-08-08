@@ -76,7 +76,7 @@ const Hero = () => {
           className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
           variants={fadeInUp}
         >
-        Helping <span className="underline italic">B2B service providers</span> turn their traffic into <span className="text-orange-500  italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
+        Helping B2B service providers turn their traffic into <span className="text-orange-500 underline italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
         </motion.p>
 
         <motion.div

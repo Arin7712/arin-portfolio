@@ -62,7 +62,7 @@ const Hero = () => {
             </div>
             <p>We're Live</p>
           </motion.div>
-          <p className={`${font.className}`}>Only 2 Spots for July</p>
+          <p className={`${font.className}`}>Only 2 Spots for August</p>
         </motion.div>
         <motion.h1
           className="md:text-5xl text-4xl tracking-tightest font-medium"
@@ -76,7 +76,7 @@ const Hero = () => {
           className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
           variants={fadeInUp}
         >
-        Helping B2B service providers turn their traffic into <span className="text-orange-500 underline italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
+        Helping <span className="underline italic">B2B service providers</span> turn their traffic into <span className="text-orange-500  italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
         </motion.p>
 
         <motion.div
@@ -95,7 +95,7 @@ const Hero = () => {
         <motion.div
         variants={fadeInUp}
          className="text-xs max-w-xs">
-          I partner with only 2 ambitious founders a month to ensure quality of service.
+          I partner with only 2 fast moving businesses a month to ensure quality of service.
         </motion.div>
 
         <motion.div
@@ -106,7 +106,7 @@ const Hero = () => {
             className="text-sm text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
             variants={fadeInUp}
           >
-            Client's who've trusted us
+            Client's who've trusted us:
           </motion.p>
 
           <motion.div

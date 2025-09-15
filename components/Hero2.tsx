@@ -29,9 +29,9 @@ const fadeInUp = {
   show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as any } },
 };
 
-const Hero = () => {
+const Hero2 = () => {
   return (
-    <div className="md:h-[98vh] h-[100vh] relative md:pt-0 pt-[9rem] flex flex-col md:justify-center items-center md:px-[6rem] px-4 text-neutral-800">
+    <div className="md:h-[98vh] h-[100vh] relative md:pt-0 pt-[9rem] flex flex-col md:justify-center md:px-[6rem] px-4 bg-neutral-950 text-neutral-100">
       <AnimatedGridPattern
         numSquares={20}
         maxOpacity={0.1}
@@ -46,15 +46,15 @@ const Hero = () => {
       />
 
       <motion.div
-        className="flex flex-col text-center items-center justify-center gap-6 max-w-full md:max-w-3xl"
+        className="flex flex-col justify-start gap-6 max-w-full md:max-w-3xl"
         variants={containerVariants}
         initial="hidden"
         animate="show"
       >
-        <motion.div
+        {/* <motion.div
           initial="hidden"
           animate="visible"
-          className="bg-neutral-50 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 pr-2 py-1 z-40"
+          className="bg-neutral-50 w-fit text-neutral-900 shadow-neutral-300/75 shadow-xs flex items-center gap-2 border-[1px] border-neutral-300 text-xs rounded-full px-1 pr-2 py-1 z-40"
         >
           <motion.div className="bg-neutral-100/40 flex items-center gap-1 border-[1px] px-2 py-1 border-neutral-300 rounded-full">
             <div className="bg-orange-400/20 p-1 flex items-center justify-center rounded-full border-[1px] border-orange-400/10">
@@ -63,17 +63,17 @@ const Hero = () => {
             <p>We're Live</p>
           </motion.div>
           <p className={`${font.className}`}>Only 2 Spots for September</p>
-        </motion.div>
+        </motion.div> */}
         <motion.h1
           className="md:text-5xl text-4xl tracking-tightest font-medium"
           variants={fadeInUp}
         >
-          Websites built to give you the <Cover>Best ROI</Cover> on your ads spend 
+          Websites built to give you the <Cover>best ROI</Cover> on your ads spend
           {" "}
         </motion.h1>
 
         <motion.p
-          className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
+          className="md:text-[1rem] text-sm leading-tight text-neutral-200 max-w-xl"
           variants={fadeInUp}
         >
         Helping B2B service providers turn their traffic into <span className="text-orange-500 underline italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
@@ -99,11 +99,11 @@ const Hero = () => {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center gap-2 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"
+          className="flex flex-col gap-2 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"
           variants={containerVariants}
         >
           <motion.p
-            className="text-sm text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
+            className="text-sm text-neutral-100 max-w-xs font-medium tracking-tight leading-tight"
             variants={fadeInUp}
           >
             Client's who've trusted us:
@@ -119,21 +119,21 @@ const Hero = () => {
                 alt="Image 1"
                 width={100}
                 height={100}
-                className="invert"
+                className=""
               />
               <Image
                 src="/logo2.webp"
                 alt="Image 1"
                 width={100}
                 height={100}
-                className="invert"
+                className=""
               />
               <Image
                 src="/logo4.webp"
                 alt="Image 4"
                 width={100}
                 height={100}
-                className="grayscale invert"
+                className=""
               />
               <h1 className="text-xl font-semibold">SaasBoomi</h1>
             </InfiniteSlider>
@@ -144,4 +144,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Hero2;

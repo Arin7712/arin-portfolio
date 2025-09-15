@@ -40,7 +40,7 @@ const Comparision = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className=" shadow-sm border bg-orange-400 rounded-xl p-8 flex flex-col justify-between min-h-full relative md:order-0 order-2"
+          className=" shadow-sm bg-orange-400 rounded-xl p-8 flex flex-col justify-between min-h-full relative md:order-0 order-2"
         >
       <AnimatedGridPattern
         numSquares={20}
@@ -48,7 +48,7 @@ const Comparision = () => {
         duration={3}
         repeatDelay={1}
         className={cn(
-          "absolute inset-0 w-full h-full opacity-0",
+          "absolute inset-0 w-full h-full opacity-70",
           "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
           "mask-size-100 mask-repeat-no-repeat",
           "pointer-events-none"
@@ -56,7 +56,7 @@ const Comparision = () => {
       />
           <div className="flex items-center gap-3 mb-4">
             <CircleCheckBig className="text-white size-6" />
-            <h2 className="text-2xl  italic font-medium text-neutral-100">
+            <h2 className="text-2xl  italic font-medium text-neutral-100 underline">
               What I do
             </h2>
           </div>

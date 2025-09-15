@@ -19,6 +19,7 @@ import Pricing from "@/components/Pricing";
 import ActionButton from "@/components/ActionButton";
 import CalendlyWidget from "@/components/CalendlyWidget";
 import Comparision from "@/components/Comparision";
+import Hero2 from "@/components/Hero2";
 
 // Animation Variants
 const containerVariants = {
@@ -38,10 +39,9 @@ const page = () => {
     <div>
       <Element name="hero">
         <Hero />
+        {/* <Hero2/> */}
       </Element>
             <Pricing />
-
-
       <Element name="features">
         <Features />
       </Element>

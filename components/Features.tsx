@@ -73,13 +73,13 @@ const Features = () => {
             {[
               {
                 icon: WandSparkles,
-                title: "Conversion-Focused Design",
-                desc: "Tailored design that fits your brand and your goals. No templates.",
+                title: "Impactful Copy",
+                desc: "Words crafted to instantly connect with your ideal clients and move them toward booking a call.",
               },
               {
                 icon: MonitorSmartphone,
-                title: "Mobile & Responsiveness",
-                desc: "Your site will look great and work perfectly on every device.",
+                title: "Conversion-focused Design",
+                desc: "A layout built to guide visitors step-by-step toward taking action, not just browsing.",
               },
             ].map((item, i) => (
               <motion.div
@@ -107,17 +107,17 @@ const Features = () => {
         </div>
 
         {/* Layer 2 */}
-        <div className="flex md:flex-row flex-col justify-between gap-4 md:min-w-6xl mt-4">
+        <div className="flex md:flex-row flex-col justify-between gap-4 md:max-w-6xl mt-4">
           {[
             {
               icon: Grid2x2Check,
-              title: "Smart Analytics",
-              desc: "Track visits, clicks, and conversions to see what’s working — & grow with data-driven decisions.",
+              title: "Seamless User Experience",
+              desc: "Effortless navigation that keeps prospects engaged and eager to learn more about your services.",
             },
             {
               icon: Rocket,
-              title: "SEO Optimization",
-              desc: "Built to rank on Google and load lightning fast out of the box.",
+              title: "High Performance & Speed",
+              desc: "Lightning-fast loading that keeps potential clients from clicking away.",
             },
           ].map((item, i) => (
             <motion.div

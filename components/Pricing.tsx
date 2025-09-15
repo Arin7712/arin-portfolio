@@ -77,19 +77,7 @@ const Pricing = () => {
   const visiblePortfolios = portfolio.slice(0, visibleCount);
 
   return (
-    <div className="relative flex flex-col items-center text-neutral-800 py-[6rem] px-0 ">
-      <AnimatedGridPattern
-        numSquares={20}
-        maxOpacity={0.1}
-        duration={3}
-        repeatDelay={1}
-        className={cn(
-          "absolute inset-0 w-full h-full opacity-20 z-10 fill-white/80 stroke-white/70",
-          "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
-          "mask-size-100 mask-repeat-no-repeat",
-          "pointer-events-none"
-        )}
-      />
+    <div className="relative flex flex-col items-center text-neutral-100 pt-6 md:pt-[6rem] px-0 bg-neutral-900">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

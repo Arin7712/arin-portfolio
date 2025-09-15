@@ -26,7 +26,11 @@ const containerVariants = {
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as any } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" as any },
+  },
 };
 
 const Hero = () => {
@@ -46,7 +50,7 @@ const Hero = () => {
       />
 
       <motion.div
-        className="flex flex-col text-center items-center justify-center gap-6 max-w-full md:max-w-3xl"
+        className="flex flex-col text-center items-center justify-center gap-6 max-w-full md:max-w-4xl"
         variants={containerVariants}
         initial="hidden"
         animate="show"
@@ -65,18 +69,19 @@ const Hero = () => {
           <p className={`${font.className}`}>Only 2 Spots for September</p>
         </motion.div>
         <motion.h1
-          className="md:text-5xl text-4xl tracking-tightest font-medium"
+          className="md:text-[3.5rem] text-4xl tracking-tight font-medium"
           variants={fadeInUp}
         >
-          Websites built to give you the <Cover>Best ROI</Cover> on your ads spend 
-          {" "}
+          Websites Built To Give You The <Cover>Best ROI</Cover> On Your Ads
+          Spend{" "}
         </motion.h1>
 
         <motion.p
           className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
           variants={fadeInUp}
         >
-        Helping B2B service providers turn their traffic into <span className="text-orange-500 underline italic">booked sales calls</span> with websites that speak to their ideal client and drive action.
+          We create high-converting websites and landing pages designed to turn
+          your paid traffic into loyal customers.{" "}
         </motion.p>
 
         <motion.div
@@ -92,11 +97,11 @@ const Hero = () => {
           </ScrollLink> */}
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
         variants={fadeInUp}
          className="text-xs max-w-xs">
           I partner with only 2 fast moving businesses a month to ensure quality of service.
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           className="flex flex-col items-center gap-2 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"

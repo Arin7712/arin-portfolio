@@ -77,11 +77,10 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="md:text-[1rem] text-sm text-neutral-700 max-w-xl"
+          className="md:text-[1rem] text-sm md:text-lg text-neutral-700 max-w-xl md:max-w-2xl"
           variants={fadeInUp}
         >
-          We create high-converting websites and landing pages designed to turn
-          your paid traffic into loyal customers.{" "}
+          High-converting websites designed with strategic copy and seamless development to convert your <span className="text-orange-500 font-medium italic">marketing traffic into paying customers</span>, so you can spend more on ads.{" "}
         </motion.p>
 
         <motion.div

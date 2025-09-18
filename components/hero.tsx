@@ -77,7 +77,7 @@ const Hero = () => {
         </motion.h1>
 
         <motion.p
-          className="md:text-[1rem] text-sm leading-tight text-neutral-600 max-w-xl"
+          className="md:text-[1rem] text-sm text-neutral-700 max-w-xl"
           variants={fadeInUp}
         >
           We create high-converting websites and landing pages designed to turn
@@ -88,7 +88,7 @@ const Hero = () => {
           className="flex md:flex-row flex-col items-center gap-6"
           variants={fadeInUp}
         >
-          <ActionButton title="Apply for a Strategy Call" />
+          <ActionButton title="Book a Call With Arin" />
 
           {/* <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">
@@ -104,14 +104,14 @@ const Hero = () => {
         </motion.div> */}
 
         <motion.div
-          className="flex flex-col items-center gap-2 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"
+          className="flex flex-col items-center gap-3 md:max-w-sm absolute bottom-[10%] md:bottom-[5%]"
           variants={containerVariants}
         >
           <motion.p
-            className="text-sm text-neutral-500 max-w-xs font-medium tracking-tight leading-tight"
+            className="text-xs text-neutral-500 max-w-sm font-medium leading-tight"
             variants={fadeInUp}
           >
-            Client's who've trusted us:
+            Trusted by 10+ startups and companies all over India
           </motion.p>
 
           <motion.div

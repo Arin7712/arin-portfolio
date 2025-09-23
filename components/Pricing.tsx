@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { CircleDollarSign, MoveRight } from "lucide-react";
+import { CircleCheck, CircleCheckBig, CircleDollarSign, MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { link } from "fs";
 import { Pricing2Demo } from "./Pricing2Demo";
@@ -90,7 +90,7 @@ const Pricing = () => {
 
           <div className="border-r-[2px] border-l-[2px] border-neutral-100 p-1 rounded-3xl">
             <div className="px-3 pr-4 py-2 rounded-3xl border-[1px] border-neutral-100 shadow-sm text-sm font-medium flex items-center gap-1">
-              <CircleDollarSign className="size-6 fill-orange-500 text-white" />
+              <CircleCheck className="size-6 fill-orange-500 text-white" />
               <p className="text-neutral-100">Why ScaleSite</p>
             </div>
           </div>

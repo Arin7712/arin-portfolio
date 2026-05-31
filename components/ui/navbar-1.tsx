@@ -66,7 +66,7 @@ const Navbar1 = () => {
             whileHover={{ rotate: 10 }}
             transition={{ duration: 0.3 }}
           >
-            <Image src='/logo2.png' alt="Logo" width={32} height={32} />
+            <Image src="/logo2.png" alt="Logo" width={32} height={32} />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -79,17 +79,13 @@ const Navbar1 = () => {
                 duration={1000}
               >
                 <motion.div
+                  className="text-sm text-neutral-200 hover:text-white hover:cursor-pointer transition-colors font-medium"
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3 }}
                   whileHover={{ scale: 1.01 }}
                 >
-                  <a
-                    href={item.href}
-                    className="text-sm text-neutral-200 hover:text-white transition-colors font-medium"
-                  >
-                    {item.name}
-                  </a>
+                  {item.name}
                 </motion.div>
               </ScrollLink>
             ))}

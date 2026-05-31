@@ -81,7 +81,7 @@ const About = () => {
             {/* Image */}
             <motion.div {...fadeIn(0.6)} className="z-20">
               <Image
-                src="/arin.jpg"
+                src="/arin.jpeg"
                 alt="arin"
                 width={450}
                 height={200}
@@ -95,9 +95,9 @@ const About = () => {
               className="space-y-6 md:space-y-4 flex flex-col justify-between py-0 md:py-10 text-neutral-100"
             >
               <h1 className="text-2xl font-medium italic underline">Arin Gawande</h1>
-              <div className="text-sm text-neutral-100 max-w-md space-y-4">
+              <div className="text-sm md:text-md text-neutral-100 max-w-md space-y-4">
                 <p>
-                  Hey, I’m Arin a 16 year old web designer and developer helping
+                  Hey, I’m Arin a 17 year old web designer and developer helping
                   founders get{" "}
                   <span className="font-medium underline italic">
                     more leads every month
@@ -109,16 +109,15 @@ const About = () => {
                   websites, no ads spend.
                 </p>
                 <p>
-                  I work closely with early-stage founders to turn ideas into
+                  I work with coaches, freelancers and service businesses to turn ideas into
                   clean, high-performing websites that{" "}
                   <span className="font-medium underline italic">
                     drive leads and growth.{" "}
                   </span>
-                  Every site I build is tailored, fast, and focused on results,
-                  not fluff.
+                  Every site I build is tailored, fast, and focused on getting you more clients.
                 </p>
                 <p>
-                  You work directly with me, no middlemen. I only take 2
+                  You work directly with me, no middlemen. I take limited 
                   projects a month to ensure{" "}
                   <span className="font-medium underline italic">
                     high quality

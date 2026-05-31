@@ -10,6 +10,7 @@ import { Inter } from "next/font/google";
 import ActionButton from "./ActionButton";
 import { Cover } from "./ui/cover";
 
+
 const font = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -45,7 +46,7 @@ const Hero = () => {
           "absolute inset-0 w-full h-full opacity-70",
           "[mask-image:linear-gradient(to_bottom,white_52%,transparent)]",
           "mask-size-100 mask-repeat-no-repeat",
-          "pointer-events-none"
+          "pointer-events-none",
         )}
       />
 
@@ -72,22 +73,28 @@ const Hero = () => {
           className="md:text-[3.5rem] text-4xl tracking-tight font-medium"
           variants={fadeInUp}
         >
-          Websites Built To Turn Visitors Into <Cover>Paying Clients</Cover>
-          {" "}
+          Websites Built To Turn Visitors Into{" "}
+          <Cover>Paying Clients</Cover>{" "}
         </motion.h1>
 
         <motion.p
           className="md:text-[1rem] text-sm md:text-lg text-neutral-700 max-w-xl md:max-w-2xl"
           variants={fadeInUp}
         >
-          High-converting websites designed with strategic copy and seamless development, so every visitor you attract has the  <span className="text-orange-500 font-medium italic">best chance of becoming a paying customer.</span>{" "}
+          High-converting websites designed with strategic copy and seamless
+          development, so every visitor you attract has the{" "}
+          <span className="text-orange-500 font-medium italic">
+            best chance of becoming a paying customer.
+          </span>{" "}
         </motion.p>
 
         <motion.div
           className="flex md:flex-row flex-col items-center gap-6"
           variants={fadeInUp}
         >
-          <ActionButton title="Book a Call With Arin" />
+          <ActionButton title="Book a Free Call" />
+
+
 
           {/* <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <Button className="underline bg-transparent shadow-none text-neutral-800 underline-offset-2 hover:bg-transparent hover:cursor-pointer">

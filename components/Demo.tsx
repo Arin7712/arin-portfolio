@@ -25,7 +25,7 @@ function Demo() {
           { href: "/terms", label: "" },
         ]}
         copyright={{
-          text: "© 2025 Arin Gawande",
+          text: "© 2026 Arin Gawande",
         }}
       />
     </div>

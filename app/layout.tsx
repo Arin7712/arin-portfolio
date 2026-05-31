@@ -4,6 +4,8 @@ import "./globals.css";
 import { Navbar1 } from "@/components/ui/navbar-1";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script"; // ✅ Import Script
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const font = Manrope({ weight: ['400', '500', '600', '700'], subsets: ['latin'] });
 
@@ -35,6 +37,14 @@ export default function RootLayout({
       <body className={font.className}>
         <Navbar1 />
         {children}
+                  <a
+                    href="https://wa.me/919876543210"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full text-white text-3xl"
+                  >
+                    <FaWhatsapp className="size-5"/>
+                  </a>
         <Analytics />
       </body>
     </html>

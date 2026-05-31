@@ -72,7 +72,7 @@ const Hero = () => {
           className="md:text-[3.5rem] text-4xl tracking-tight font-medium"
           variants={fadeInUp}
         >
-          Websites Built To Turn Your Visitors Into <Cover>Paying Clients</Cover>
+          Websites Built To Turn Visitors Into <Cover>Paying Clients</Cover>
           {" "}
         </motion.h1>
 

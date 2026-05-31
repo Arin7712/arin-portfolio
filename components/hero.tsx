@@ -66,21 +66,21 @@ const Hero = () => {
             </div>
             <p>We're Live</p>
           </motion.div>
-          <p className={`${font.className}`}>Only 2 Spots for September</p>
+          <p className={`${font.className}`}>Only 2 Spots for June</p>
         </motion.div>
         <motion.h1
           className="md:text-[3.5rem] text-4xl tracking-tight font-medium"
           variants={fadeInUp}
         >
-          Websites Built To Give You The <Cover>Best ROI</Cover> On Your Ads
-          Spend{" "}
+          Websites Built To Turn Your Visitors Into <Cover>Paying Clients</Cover>
+          {" "}
         </motion.h1>
 
         <motion.p
           className="md:text-[1rem] text-sm md:text-lg text-neutral-700 max-w-xl md:max-w-2xl"
           variants={fadeInUp}
         >
-          High-converting websites designed with strategic copy and seamless development to convert your <span className="text-orange-500 font-medium italic">marketing traffic into paying customers</span>, so you can spend more on ads.{" "}
+          High-converting websites designed with strategic copy and seamless development, so every visitor you attract has the  <span className="text-orange-500 font-medium italic">best chance of becoming a paying customer.</span>{" "}
         </motion.p>
 
         <motion.div

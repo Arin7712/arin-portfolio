@@ -38,7 +38,7 @@ export default function RootLayout({
         <Navbar1 />
         {children}
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/917972026694"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full text-white text-3xl"

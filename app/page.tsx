@@ -82,7 +82,7 @@ const page = () => {
             className="space-y-3 flex flex-col items-center justify-center"
           >
             <h1 className="md:text-4xl text-3xl tracking-tighter font-semibold md:max-w-xl">
-              Let’s Build a Website That Actually Converts
+              Let’s Build a Website That Actually Gets Results
             </h1>
             <p className="text-sm max-w-md text-neutral-300">
               Book a free 15-min strategy call — no fluff, just clarity and
